@@ -6,7 +6,7 @@
 #!/bin/bash -e
 #SBATCH -p nbi-long # partition (queue)
 #SBATCH --mail-type=END,FAIL # notifications for job done & fail
-#SBATCH --mail-user=billy.aldridge@jic.ac.uk # send-to address
+#SBATCH --mail-user=email@jic.ac.uk # send-to address
 #SBATCH --mem-per-cpu=32000
 #SBATCH --array=0-6
 #SBATCH --cpus-per-task=1
