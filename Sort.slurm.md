@@ -1,6 +1,6 @@
-#sorting
+# sorting
 
-#Make sure w1 files are sorted before continuing
+# Make sure w1 files are sorted before continuing
 
 ```
 #!/bin/bash -e
@@ -19,7 +19,7 @@ srun sort ${ARRAY[$SLURM_ARRAY_TASK_ID]}.CG.w1.gff -k1,1 -k4,4n -o ${ARRAY[$SLUR
 srun sort ${ARRAY[$SLURM_ARRAY_TASK_ID]}.CHG.w1.gff -k1,1 -k4,4n -o ${ARRAY[$SLURM_ARRAY_TASK_ID]}.sorted.CHG.w1.gff
 srun sort ${ARRAY[$SLURM_ARRAY_TASK_ID]}.CHH.w1.gff -k1,1 -k4,4n -o ${ARRAY[$SLURM_ARRAY_TASK_ID]}.sorted.CHH.w1.gff
 ```
-##Notes
+## Notes
 
 use sed to make sure Chr labels in gff files are identical
 
